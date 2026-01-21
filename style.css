@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(120deg, #0a1a2f, #102a43, #163a5f);
+    color: #ffffff;
+}
+
+.hero {
+    height: 80vh;
+    background-image: url("https://s3.amazonaws.com/s3.bimmerfile.com/wp-content/uploads/2020/06/16125748/F90_M5_LCI_0003.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 1;
+    color: #4db8ff;
+}
+
+.hero h1 {
+    font-size: 56px;
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+nav {
+    background-color: #000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 15px 25px;
+}
+
+nav a {
+    color: #4db8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+h2 {
+    color: #4db8ff;
+    margin-bottom: 10px;
+}
+
+/* LISTS */
+.colored-list li {
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #4db8ff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.link-card a {
+    color: #00e5ff;
+    font-weight: bold;
+}
+
+.link-card a:hover {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #cccccc;
+}
